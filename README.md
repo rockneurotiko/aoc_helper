@@ -14,7 +14,7 @@ Create base code and try to download data:
 
 `mix aoc.new --year 2020 --day 1`
 
-Year and day are optional, if not passed it will use the current date.
+Year and day are optional, if not provided it will use the current date. If you are doing the AoC day by day, just executing `mix aoc.new` will create it for the current day.
 
 This command will create a module named `<YourPackage>.Aoc<year>.Day<day>.Solve` in the path `lib/<your_package>/<year>/<day>/solve.ex`
 
