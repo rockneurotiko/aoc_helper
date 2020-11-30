@@ -24,7 +24,7 @@ defmodule AocHelper.MixProject do
       maintainers: ["Miguel Garcia / Rock Neurotiko"],
       licenses: ["Beerware"],
       links: %{"GitHub" => "https://github.com/rockneurotiko/aoc_helper"},
-      files: ~w(lib templates mix.exs README.md)
+      files: ~w(lib mix.exs README.md)
     ]
   end
 
