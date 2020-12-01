@@ -1,5 +1,5 @@
 defmodule AocHelper.Aoc2019.Day01.Solve do
-  @base_path "lib/aoc_helper/2019/01"
+  @base_path Path.dirname(__ENV__.file)
 
   def star1(input) do
     "TODO"
@@ -35,6 +35,7 @@ defmodule AocHelper.Aoc2019.Day01.Solve do
   defp parse!(t) do
     t
     |> String.split("\n")
+    |> Enum.filter(& &1 != "")
     |> Enum.map(&parse_line/1)
   end
 end

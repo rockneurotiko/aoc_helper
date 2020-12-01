@@ -74,7 +74,7 @@ defmodule Mix.Tasks.Aoc.New do
 
   embed_template(:day, """
   defmodule <%= @app_module %>.Aoc<%= @year %>.Day<%= @day %>.Solve do
-    @base_path __ENV__.file
+    @base_path Path.dirname(__ENV__.file)
 
     def star1(input) do
       "TODO"
@@ -110,6 +110,7 @@ defmodule Mix.Tasks.Aoc.New do
     defp parse!(t) do
       t
       |> String.split("\\n")
+      |> Enum.filter(& &1 != "")
       |> Enum.map(&parse_line/1)
     end
   end
