@@ -74,7 +74,7 @@ defmodule Mix.Tasks.Aoc.New do
 
   embed_template(:day, """
   defmodule <%= @app_module %>.Aoc<%= @year %>.Day<%= @day %>.Solve do
-    @base_path "<%= @base_path %>"
+    @base_path __ENV__.file
 
     def star1(input) do
       "TODO"
