@@ -34,8 +34,7 @@ defmodule AocHelper.Aoc2019.Day01.Solve do
 
   defp parse!(t) do
     t
-    |> String.split("\n")
-    |> Enum.filter(& &1 != "")
+    |> String.split("\n", trim: true)
     |> Enum.map(&parse_line/1)
   end
 end
